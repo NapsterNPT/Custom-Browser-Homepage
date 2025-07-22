@@ -1,33 +1,12 @@
-/*Phone (small size)*/
-
-@media (width <= 928px) {
-  .container_sezione {
-    gap: 25px !important;
-  }
-
-  .sezione {
-    min-width: 150px !important;
-    max-width: 150px !important;
-    min-height: 150px !important;
-    max-height: 150px !important;
-    border: 0.5px solid #ffffff1d !important;
-  }
-
-  .immagine_sezione,
-  .immagine_sezione_speciale {
-    margin: 10px !important;
-    width: 75px !important;
-  }
-}
-
-/*Default*/
-
-* {
-  --hover-me-txt: #797979;
+:root {
+  --background-color: #1e1e1e;
+  --container-color: #47474747;
+  --text-color: #f3f3f3;
+  --hover-color: #797979;
 }
 
 body {
-  background: #111111;
+  background: var(--background-color);
   margin: 0px;
   text-align: center;
   font-family: Tahoma;
@@ -40,7 +19,7 @@ h4,
 h5,
 h6,
 a {
-  color: #f3f3f3;
+  color: var(--text-color);
   margin: 0px;
 }
 
@@ -59,8 +38,7 @@ header {
   border-radius: 20px;
   display: flex;
   position: relative;
-  border: 1px solid #ffffff1d;
-  background: #1c1f2b9f;
+  background: var(--container-color);
 }
 
 .selection_summary svg {
@@ -86,9 +64,8 @@ header {
   list-style: none;
   cursor: default;
   text-align: left;
-  background: #1c1f2b9f;
+  background: var(--container-color);
   border-radius: 20px;
-  border: 1px solid #ffffff1d;
   backdrop-filter: blur(5px);
 }
 
@@ -117,16 +94,11 @@ header {
 }
 
 .container_sezione {
-  max-width: 76%;
+  max-width: 80%;
   display: inline-flex;
   gap: 50px;
   flex-wrap: wrap;
-  border: 1px solid #ffffff1d;
-  border-radius: 20px;
-  padding: 50px;
-  margin: 15px;
   justify-content: center;
-  background: #1c1f2b67;
 }
 
 .sezione {
@@ -135,19 +107,17 @@ header {
   min-height: 200px;
   max-height: 200px;
   border-radius: 20px;
-  border: 1px solid #ffffff1d;
   cursor: pointer;
-  background: #1c1f2b;
+  background: var(--container-color);
 }
 
 .sezione:hover .titolo_sezione {
-  color: var(--hover-me-txt);
+  color: var(--hover-color);
 }
 
 .sezione_header {
-  background: #9b9b9b21;
+  background: var(--container-color);
   border-radius: 20px;
-  border: 1px solid #ffffff1d;
   cursor: pointer;
 }
 
@@ -190,14 +160,13 @@ header {
 }
 
 .researc {
-  width: 76%;
+  width: 80%;
   display: inline-flex;
   flex-wrap: nowrap;
-  border: 1px solid #ffffff1d;
   border-radius: 20px;
-  margin: 15px;
+  margin: 15px 15px 50px 15px;
   justify-content: center;
-  background: #1c1f2b67;
+  background: var(--container-color);
   backdrop-filter: blur(10px);
   align-items: center;
   cursor: pointer;
@@ -206,7 +175,7 @@ header {
 }
 
 .researc:hover .researc_svg {
-  fill: var(--hover-me-txt);
+  fill: var(--hover-color);
 }
 
 .researc_svg {
