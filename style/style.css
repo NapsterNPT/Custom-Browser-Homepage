@@ -1,12 +1,17 @@
-:root {
-  --background-color: #1e1e1e;
+/*:root {
+  --base-color: #1e1e1e;
   --container-color: #47474747;
   --text-color: #f3f3f3;
   --hover-color: #797979;
-}
+}*/
 
 body {
-  background: var(--background-color);
+  --base-color: #1e1e1e;
+  --text-color: #f3f3f3;
+  --container-color: oklch(from var(--base-color) calc(l * 1.2) c h);
+  --hover-color: oklch(from var(--text-color) calc(l / 2) c h);
+
+  background: var(--base-color);
   margin: 0px;
   text-align: center;
   font-family: Tahoma;
@@ -190,9 +195,27 @@ header {
   transition: all 0.1s ease-in-out;
 }
 
+.color-piker-container {
+  background: var(--container-color);
+  position: fixed;
+  bottom: 5px;
+  left: 5px;
+  width: 50px;
+  height: 50px;
+}
+
+.color-piker-container input {
+  /*border-radius: 20px;*/
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+  text-align: center;
+  font-family: Tahoma;
+}
+
 .made {
   position: fixed;
-  color: #919191;
+  color: var(--hover-color);
   font-size: x-small;
   text-align: right;
   bottom: 5px;
