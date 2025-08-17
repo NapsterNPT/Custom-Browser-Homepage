@@ -1,16 +1,23 @@
-/*:root {
-  --base-color: #1e1e1e;
-  --container-color: #47474747;
-  --text-color: #f3f3f3;
-  --hover-color: #797979;
-}*/
+@media (prefers-color-scheme: dark) {
+  :root {
+    --base-color: #1e1e1e;
+    --text-color: #f3f3f3;
+  }
+}
 
-body {
-  --base-color: #1e1e1e;
-  --text-color: #f3f3f3;
+@media (prefers-color-scheme: light) {
+  :root {
+    --base-color: #f3f3f3;
+    --text-color: #1e1e1e;
+  }
+}
+
+:root {
   --container-color: oklch(from var(--base-color) calc(l * 1.2) c h);
   --hover-color: oklch(from var(--text-color) calc(l / 2) c h);
+}
 
+body {
   background: var(--base-color);
   margin: 0px;
   text-align: center;
@@ -47,6 +54,7 @@ header {
 }
 
 .selection_summary svg {
+  fill: var(--text-color);
   transition: 0.1s all ease-in-out;
 }
 
@@ -184,6 +192,7 @@ header {
 }
 
 .researc_svg {
+  fill: var(--text-color);
   margin-right: auto;
   margin-left: 25px;
   transition: all 0.1s ease-in-out;
