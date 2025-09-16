@@ -10,5 +10,3 @@
 
 - make it easier to customize it. (Do I know how? Ofc not 🔥🔥)
 - Change all the CSS classes from Italian to English
-
-Pls leave the trademark at the bottom (it's so little and cute) if you use it. Thank.,
