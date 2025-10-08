@@ -73,11 +73,11 @@ header {
   grid-auto-rows: 200px;
   gap: 50px;
   grid-template-areas: 
-  "link-1 link-2 link-3 link-3 link-4 link-4"
-  "link-1 link-2 link-3 link-3 link-4 link-4"
-  "link-5 link-5 link-6 link-7 link-8 link-8"
-  "link-9 link-10 link-11 link-11 link-12 link-13"
-  "link-9 link-14 link-14 link-15 link-12 link-16";
+  "link-1 link-1 link-2 link-3 link-3 link-4"
+  "link-1 link-1 link-2 link-7 link-7 link-4"
+  "link-5 link-5 link-6 link-8 link-9 link-14"
+  "link-10 link-11 link-12 link-12 link-13 link-14"
+  "link-10 link-15 link-15 link-16 link-13 link-17";
 }
 
 .box {
