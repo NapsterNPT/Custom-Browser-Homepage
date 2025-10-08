@@ -1,24 +1,26 @@
 @media (prefers-color-scheme: dark) {
   :root {
-    --base-color: #1e1e1e;
+    --background-color: #1e1e1eaf;
+    --base-color: #1e1e1ea0;
     --text-color: #f3f3f3;
   }
 }
 
 @media (prefers-color-scheme: light) {
   :root {
-    --base-color: #f3f3f3;
+    --background-color: #f3f3f3;
+    --base-color: #f3f3f3a0;
     --text-color: #1e1e1e;
   }
 }
 
 :root {
-  --container-color: oklch(from var(--base-color) calc(l * 1.2) c h);
+  --container-color: oklch(from var(--background-color) calc(l * 1.2) c h);
   --hover-color: oklch(from var(--text-color) calc(l / 2) c h);
 }
 
 body {
-  background: var(--base-color);
+  background: var(--background-color);
   margin: 0px;
   text-align: center;
   font-family: Tahoma;
@@ -64,6 +66,7 @@ header {
 /*  Liks  */
 
 .grid-container {
+  margin-bottom: 100px;
   justify-content: center;
   display: grid;
   grid-template-columns: 200px 200px 200px 200px 200px 200px;
@@ -71,11 +74,14 @@ header {
   gap: 50px;
   grid-template-areas: 
   "link-1 link-2 link-3 link-3 link-4 link-4"
-  "link-1 link-2 link-5 link-6 link-7 link-8"
-  "link-9 link-10 link-11 link-12 link-13 link-14";
+  "link-1 link-2 link-3 link-3 link-4 link-4"
+  "link-5 link-5 link-6 link-7 link-8 link-8"
+  "link-9 link-10 link-11 link-11 link-12 link-13"
+  "link-9 link-14 link-14 link-15 link-12 link-16";
 }
 
 .box {
+  position: relative;
   display: grid;
   justify-content: center;
   padding: 20px;
@@ -92,6 +98,13 @@ header {
 }
 
 .box h2 {
+  box-sizing: border-box;
+  border-radius: 20px;
+  background-color: var(--base-color);
+  width: 100%;
+  padding: 20px;
+  position: absolute;
+  bottom: 0px;
   transition: all 0.1s ease-in-out;
 }
 
