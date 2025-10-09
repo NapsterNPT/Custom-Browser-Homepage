@@ -5,6 +5,7 @@
 - Lightwait, so even the worst pc won't take 1h to load the page
 - Fully customizable, change the links, and change the icons and images
 - Compatible with light mode and dark mode
+- Up to 25 link cells
 
 ### Future updates:
 
