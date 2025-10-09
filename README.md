@@ -10,3 +10,4 @@
 
 - make it easier to customize it. (Do I know how? Ofc not 🔥🔥)
 - Change all the CSS classes from Italian to English
+- remove the onclick funcion
