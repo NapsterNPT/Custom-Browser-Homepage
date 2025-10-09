@@ -75,6 +75,44 @@ header {
   height: 100%;
 }
 
+
+
+/*  Search  */
+
+.search {
+  z-index: 10;
+  width: 80%;
+  display: inline-flex;
+  flex-wrap: nowrap;
+  border-radius: 20px;
+  justify-content: center;
+  background: var(--container-color);
+  backdrop-filter: blur(10px);
+  align-items: center;
+  cursor: pointer;
+  position: sticky;
+  top: 25px;
+}
+
+.search:hover .search svg {
+  fill: var(--hover-color);
+}
+
+.search svg {
+  fill: var(--text-color);
+  margin-right: auto;
+  margin-left: 25px;
+  transition: all 0.1s ease-in-out;
+}
+
+.search img {
+  height: 24px;
+  padding: 25px;
+  transition: all 0.1s ease-in-out;
+}
+
+
+
 /*  Liks  */
 
 .grid-container {
