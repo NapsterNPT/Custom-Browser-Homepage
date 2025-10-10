@@ -10,4 +10,3 @@
 ### Future updates:
 
 - make it easier to customize it. (Do I know how? Ofc not 🔥🔥)
-- remove the onclick funcion
