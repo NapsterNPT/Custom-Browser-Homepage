@@ -1,3 +1,5 @@
+/*  Dark and light theme  */
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background-color: #1e1e1e;
@@ -13,6 +15,57 @@
     --text-color: #1e1e1e;
   }
 }
+
+
+
+/*  Small Screen Size support  */
+
+@media (max-width: 1000px) {
+  .grid-container {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0px calc((100% - (150px * 4 + 45px * 3)) / 2);
+    margin-bottom: 100px;
+    display: grid;
+    grid-auto-columns: 150px;
+    grid-auto-rows: 150px;
+    gap: 45px;
+    grid-template-areas:
+    "link-1 link-1 link-2 link-3"
+    "link-1 link-1 link-2 link-4" 
+    "link-5 link-5 link-6 link-7"
+    "link-8 link-9 link-9 link-7"
+    "link-8 link-10 link-11 link-11"
+    "link-12 link-10 link-13 link-14"
+    "link-15 link-16 link-17 link-18"
+    "link-19 link-20 link-21 link-21"
+    "link-22 link-23 link-24 link-25";
+  }
+}
+
+@media (min-width: 1001px) {
+  .grid-container {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0px calc((100% - (200px * 6 + 50px * 5)) / 2);
+    margin-bottom: 100px;
+    display: grid;
+    grid-auto-columns: 200px;
+    grid-auto-rows: 200px;
+    gap: 50px;
+    grid-template-areas:
+    "link-1 link-1 link-2 link-3 link-3 link-4"
+    "link-1 link-1 link-2 link-7 link-7 link-4"
+    "link-5 link-5 link-6 link-8 link-9 link-14"
+    "link-10 link-11 link-12 link-12 link-13 link-14"
+    "link-10 link-15 link-16 link-17 link-18 link-19"
+    "link-20 link-21 link-22 link-23 link-24 link-25";
+  }
+}
+
+
+
+/*  Actual CSS  */
 
 :root {
   --container-color: oklch(from var(--background-color) calc(l * 1.2) c h);
@@ -120,24 +173,6 @@ img {
 
 
 /*  Liks  */
-
-.grid-container {
-  width: 100%;
-  box-sizing: border-box;
-  padding: 0px calc((100% - (200px * 6 + 50px * 5)) / 2);
-  margin-bottom: 100px;
-  display: grid;
-  grid-auto-columns: 200px;
-  grid-auto-rows: 200px;
-  gap: 50px;
-  grid-template-areas: 
-  "link-1 link-1 link-2 link-3 link-3 link-4"
-  "link-1 link-1 link-2 link-7 link-7 link-4"
-  "link-5 link-5 link-6 link-8 link-9 link-14"
-  "link-10 link-11 link-12 link-12 link-13 link-14"
-  "link-10 link-15 link-16 link-17 link-18 link-19"
-  "link-20 link-21 link-22 link-23 link-24 link-25";
-}
 
 .box {
   position: relative;
