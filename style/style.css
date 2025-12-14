@@ -1,5 +1,4 @@
 /*  Dark and light theme  */
-
 @media (prefers-color-scheme: dark) {
   :root {
     --background-color: #1e1e1e;
@@ -17,13 +16,10 @@
 }
 
 
-
 /*  Small Screen Size support  */
-
 @media (max-width: 1000px) {
   .grid-container {
     width: 100%;
-    box-sizing: border-box;
     padding: 0px calc((100% - (150px * 4 + 45px * 3)) / 2);
     margin-bottom: 100px;
     display: grid;
@@ -46,7 +42,6 @@
 @media (min-width: 1001px) {
   .grid-container {
     width: 100%;
-    box-sizing: border-box;
     padding: 0px calc((100% - (200px * 6 + 50px * 5)) / 2);
     margin-bottom: 100px;
     display: grid;
@@ -64,12 +59,15 @@
 }
 
 
-
 /*  Actual CSS  */
-
 :root {
   --container-color: oklch(from var(--background-color) calc(l * 1.2) c h);
   --hover-color: oklch(from var(--text-color) calc(l / 2) c h);
+}
+
+* {
+  box-sizing: border-box;
+  corner-shape: squircle;
 }
 
 body {
@@ -96,9 +94,7 @@ img {
 }
 
 
-
 /*  Header  */
-
 .header-grid {
   margin: 100px 0;
   display: grid;
@@ -126,14 +122,11 @@ img {
 
 .account-image {
   padding: 10px;
-  box-sizing: border-box;
   height: 100%;
 }
 
 
-
 /*  Search  */
-
 .search {
   z-index: 10;
   width: 85%;
@@ -171,9 +164,7 @@ img {
 }
 
 
-
 /*  Liks  */
-
 .box {
   position: relative;
   padding: 20px;
@@ -195,7 +186,6 @@ img {
 }
 
 .box h2 {
-  box-sizing: border-box;
   border-radius: 20px;
   background-color: var(--base-color);
   width: 100%;
@@ -207,9 +197,7 @@ img {
 }
 
 
-
 /*  Trademark  */
-
 .trademark {
   position: fixed;
   color: var(--hover-color);
