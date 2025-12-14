@@ -7,11 +7,10 @@
 - Compatible with light mode and dark mode
 - Up to 25 link cells
 
-## Showcase 
+## Showcase
 
 [Click here](https://napsternpt.github.io/custom-browser-homepage)
 
 ### Future updates:
 
-- Make it easier to customize it. (Do I know how? Ofc not 🔥🔥)
-
+- Make it easier to customize.
