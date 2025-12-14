@@ -196,14 +196,3 @@ img {
   left: 0px;
   transition: all 0.1s ease-in-out;
 }
-
-
-/*  Trademark  */
-.trademark {
-  position: fixed;
-  color: var(--hover-color);
-  font-size: x-small;
-  text-align: right;
-  bottom: 5px;
-  right: 5px;
-}
