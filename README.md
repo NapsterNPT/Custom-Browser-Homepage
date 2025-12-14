@@ -9,7 +9,7 @@
 
 ## Showcase
 
-[Click here](https://napsternpt.github.io/custom-browser-homepage/index.html)
+[Click here](https://napsternpt.github.io/Custom-Browser-Homepage/)
 
 ### Future updates:
 
