@@ -1,4 +1,4 @@
-# CUSTOM BROWSER HOMEPAGE ##(V. 2.3.5)
+# CUSTOM BROWSER HOMEPAGE ##(V. 2.3.6)
 
 ### This is the homepage I made for fun, 100%.
 
@@ -7,9 +7,11 @@
 - Compatible with light mode and dark mode
 - Up to 25 link cells
 
+
 ## Showcase
 
 [Click here](https://napsternpt.github.io/Custom-Browser-Homepage/)
+
 
 ### Future updates:
 
