@@ -10,8 +10,3 @@
 ## Showcase
 
 [Click here](https://napsternpt.github.io/Custom-Browser-Homepage/)
-
-
-### Future updates:
-
-- Make it easier to customize.
