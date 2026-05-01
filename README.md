@@ -1,12 +1,11 @@
-# CUSTOM BROWSER HOMEPAGE ##(V. 2.3.6)
+# CUSTOM BROWSER HOMEPAGE ##(V. 2.4.6)
 
-### This is the homepage I made for fun, 100%.
+### This is a custom and versatile homepage, pretty useful to organize yourself.
 
-- Lightwait, so even the worst pc won't take 1h to load the page
-- Fully customizable, change the links, and change the icons and images as you like
-- Compatible with light mode and dark mode
-- Up to 25 link cells
-
+- Lightweight design for fast loading.
+- Fully customizable: modify titles, links, icons, and sizes directly in the config.js file.
+- Compatible with light mode and dark mode on your device.
+- Up to unlimited link cells.
 
 ## Showcase
 
