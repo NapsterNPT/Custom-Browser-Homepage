@@ -1,4 +1,4 @@
-# CUSTOM BROWSER HOMEPAGE ##(V. 2.4.6)
+# CUSTOM BROWSER HOMEPAGE v. 2.4.6
 
 ### This is a custom and versatile homepage, pretty useful to organize yourself.
 
